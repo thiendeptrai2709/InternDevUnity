@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerLandState : PlayerBaseState
 {
     private float landTimer;
-    public float landDuration = 0.8f;
+    public float landDuration = 0.6f;
 
     public override void EnterState(PlayerStateManager player)
     {

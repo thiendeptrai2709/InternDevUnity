@@ -4,6 +4,7 @@ public class PlayerRunState : PlayerBaseState
 {
     public override void EnterState(PlayerStateManager player)
     {
+        player.animator.Play("Locomotion");
     }
 
     public override void UpdateState(PlayerStateManager player)

@@ -12,6 +12,7 @@ public class PlayerStateManager : MonoBehaviour
     public PlayerInteractState interactState = new PlayerInteractState();
     public PlayerFallState fallState = new PlayerFallState();
     public PlayerLandState landState = new PlayerLandState();
+    public PlayerDeathState deathState = new PlayerDeathState();
     private void Start()
     {
         animator = GetComponent<Animator>();
