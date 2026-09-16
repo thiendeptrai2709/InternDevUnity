@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private float turnSmoothVelocity;
     public float gravity = -9.81f;
     public float jumpHeight = 1.2f;
-    private float velocityY;
+    public float velocityY;
     private void Awake()
     {
         controller = GetComponent<CharacterController>();
