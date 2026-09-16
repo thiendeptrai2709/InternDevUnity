@@ -24,6 +24,7 @@ public class PlayerStateManager : MonoBehaviour
     {
         animator.SetFloat("VelocityY", GetComponent<PlayerMovement>().velocityY);
         animator.SetBool("IsGrounded", GetComponent<CharacterController>().isGrounded);
+        animator.SetFloat("Speed", InputManager.Instance.MoveInput.magnitude);
         currentState.UpdateState(this);
     }
 

@@ -10,11 +10,8 @@ public class PlayerDeathState : PlayerBaseState
 
         player.GetComponent<RagdollController>().EnableRagdoll();
 
-        InputManager.Instance.playerControls.Disable();
-
         GameManager.Instance.ShowDeathPanel();
     }
-
     public override void UpdateState(PlayerStateManager player)
     {
     }
