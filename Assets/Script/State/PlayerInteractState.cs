@@ -7,7 +7,6 @@ public class PlayerInteractState : PlayerBaseState
 
     public override void EnterState(PlayerStateManager player)
     {
-        player.animator.Play("Interact");
         interactTimer = 0f;
     }
 

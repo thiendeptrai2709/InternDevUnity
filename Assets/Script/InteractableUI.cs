@@ -43,7 +43,14 @@ public class InteractableUI : MonoBehaviour
         }
 
         onInteractEvent.Invoke();
-        uiCanvas.SetActive(false);
-        GetComponent<Collider>().enabled = false;
+    }
+
+    public void ToggleInteract(bool state)
+    {
+        GetComponent<Collider>().enabled = state;
+        if (!state)
+        {
+            uiCanvas.SetActive(false);
+        }
     }
 }
