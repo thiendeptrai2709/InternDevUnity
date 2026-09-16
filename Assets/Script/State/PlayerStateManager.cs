@@ -9,6 +9,7 @@ public class PlayerStateManager : MonoBehaviour
     public PlayerIdleState idleState = new PlayerIdleState();
     public PlayerRunState runState = new PlayerRunState();
     public PlayerJumpState jumpState = new PlayerJumpState();
+    public PlayerInteractState interactState = new PlayerInteractState();
 
     private void Start()
     {
