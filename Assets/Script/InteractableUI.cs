@@ -8,6 +8,9 @@ public class InteractableUI : MonoBehaviour
     public Button interactButton;
     public UnityEvent onInteractEvent;
 
+    public AudioSource audioSource;
+    public AudioClip interactSound;
+
     private void Start()
     {
         uiCanvas.SetActive(false);
@@ -32,6 +35,11 @@ public class InteractableUI : MonoBehaviour
 
     private void OnButtonClicked()
     {
+        if (audioSource != null && interactSound != null)
+        {
+            audioSource.PlayOneShot(interactSound);
+        }
+
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {

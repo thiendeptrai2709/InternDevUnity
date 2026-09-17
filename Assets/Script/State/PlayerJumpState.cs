@@ -5,6 +5,7 @@ public class PlayerJumpState : PlayerBaseState
     public override void EnterState(PlayerStateManager player)
     {
         player.animator.Play("JumpUp");
+        player.GetComponent<PlayerSound>().PlayJumpSound();
         player.GetComponent<PlayerMovement>().PerformJump();
     }
 
