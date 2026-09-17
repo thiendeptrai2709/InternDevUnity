@@ -16372,19 +16372,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platforms:
-  - {fileID: 9155457298916375661}
-  - {fileID: 6725289442672365378}
-  - {fileID: 547410253332827084}
-  - {fileID: 412238123919809227}
-  - {fileID: 2693056541637343520}
-  - {fileID: 7366262178959936914}
-  - {fileID: 6386976999389685981}
   - {fileID: 2443793671859170515}
   - {fileID: 1690111445623290823}
   - {fileID: 776493297510755116}
   - {fileID: 2402595780500325934}
   - {fileID: 2519327639800430669}
-  - {fileID: 4591781116740768582}
+  spawnDelay: 0.2
+  moveDistance: 2
+  moveSpeed: 8
 --- !u!1 &8667425453701327854
 GameObject:
   m_ObjectHideFlags: 0
